@@ -9,5 +9,11 @@
   },
   "keywords": [],
   "author": "Paul Chávez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "mongoose": "^5.11.19"
+  }
 }
