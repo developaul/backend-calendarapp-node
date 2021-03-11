@@ -63,7 +63,7 @@ const loginUser = async (req = request, res = response) => {
     if (!user) {
       return res.status(400).json({
         ok: false,
-        msg: 'El usuario existe con ese email'
+        msg: 'El usuario no existe con ese email'
       });
     }
 
@@ -109,6 +109,8 @@ const revalidateToken = async (req = request, res = response) => {
 
   res.json({
     ok: true,
+    uid,
+    name,
     token
   });
 
